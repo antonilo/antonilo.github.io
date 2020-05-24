@@ -228,6 +228,50 @@ hr {
 .align-right {
   text-align: right; }
 
+/* PUBLICATIONS */
+.pub > table td {
+  padding-bottom:10px;
+}
+.pub > table td.bibtexnumber {
+  width:40px;
+  text-align:left;
+}
+
+/* new */
+.publication-list {
+  margin-top:10px;
+}
+.publication:first-child {
+  border-top: 1px solid #CCC;
+}
+.publication {
+  overflow:hidden;
+  border-bottom: 1px solid #CCC;
+  padding:10px 0;
+}
+.publication .img-wrapper {
+  float:left;
+  margin-right:15px;
+}
+.publication .img-wrapper > img {
+  width:90px;
+  display:block;
+  border-radius:4px;
+}
+.publication .info-wrapper {
+  overflow:hidden; /* magic trick to inhibit float around image */
+}
+.publication .title {
+  font-weight:bold;
+  font-size:15px;
+  padding-top:4px;
+}
+.publication .download a {
+  display:block;
+  padding:5px 10px 0 0;
+  float:left;
+}
+
 /* Row */
 .row {
   display: flex;
@@ -1220,7 +1264,7 @@ input[type="radio"] + label:before {
     border-radius: 0.375em;
     display: block; }
   .image.left, .image.right {
-    max-width: 40%; }
+    max-width: 22%; }
     .image.left img, .image.right img {
       width: 100%; }
   .image.left {
